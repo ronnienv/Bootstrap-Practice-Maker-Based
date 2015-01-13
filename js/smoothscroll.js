@@ -29,3 +29,15 @@ $("a.navbar-brand[href^='#']").on('click', function(e) {
     window.location.hash = hash;
   });
 });
+
+$("#back-to-top a[href^='#']").on('click', function(e) {
+
+  e.preventDefault();
+
+  var hash = this.hash;
+  $('html, body').animate({
+    scrollTop: $(this.hash).offset().top
+  }, 300, function(){
+    window.location.hash = hash;
+  });
+});

@@ -83,6 +83,16 @@ footer {
 	padding-bottom: 30px;
 }
 
+#back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#back-to-top a {
+	color: #333;
+}
+
 /*responsive styling*/
 
 @media (max-width: 1199px) {
